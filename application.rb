@@ -10,8 +10,8 @@ use Rack::Cors do |config|
 end
 
 set :mail_options, {
-	:to => 'YOUR@EMAIL.COM',
-	:from => 'YOUR@EMAIL.COM',
+	:to => 'weeblytricks@gmail.com',
+	:from => 'weeblytricks@gmail.com',
 	:via => :smtp,
 	:via_options => {
 		:address => 'smtp.sendgrid.net',
