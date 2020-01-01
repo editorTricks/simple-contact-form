@@ -17,8 +17,8 @@ set :mail_options, {
 		:address => 'smtp.sendgrid.net',
 		:port => 587,
 		:domain => 'heroku.com',
-		:user_name => ENV['SENDGRID_USERNAME'],
-		:password => ENV['SENDGRID_PASSWORD'],
+		:user_name => ENV['app157471209@heroku.com'],
+		:password => ENV['vzloolk81498'],
 		:authentication => :plain
 	}
 }
@@ -38,5 +38,5 @@ post '/send_email' do
   settings.mail_options[:subject] = "New message via contact form"
 
   Pony.mail(settings.mail_options)
-  redirect "http://YOUR_THANK_YOU_URL"
+  redirect "https://weeblytricks.com/"
 end
